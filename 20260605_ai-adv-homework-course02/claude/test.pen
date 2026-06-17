@@ -1,0 +1,5078 @@
+{
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "S02CZS",
+      "x": 0,
+      "y": 0,
+      "name": "Nav/Component",
+      "reusable": true,
+      "width": 1440,
+      "height": 72,
+      "fill": "#0E1A14",
+      "stroke": "#2A3D33",
+      "strokeWidth": {
+        "bottom": 1
+      },
+      "padding": [
+        0,
+        60
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Xh9uw",
+          "name": "Logo",
+          "gap": 10,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yx2u2",
+              "name": "LogoDot",
+              "fill": "#C9A96E",
+              "content": "✦",
+              "fontFamily": "Newsreader",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "rI8Dg",
+              "name": "LogoName",
+              "fill": "#F0EAD8",
+              "content": "BLOOM",
+              "fontFamily": "Newsreader",
+              "fontSize": 20,
+              "letterSpacing": 6
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ptN2L",
+          "name": "NavLinks",
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "m3Mz9",
+              "name": "Link/首頁",
+              "fill": "#F0EAD8",
+              "content": "首頁",
+              "fontFamily": "Geist",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "Ig8ru",
+              "name": "Link/商品",
+              "fill": "#7A9088",
+              "content": "商品",
+              "fontFamily": "Geist",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "VkZAP",
+              "name": "Link/系列",
+              "fill": "#7A9088",
+              "content": "系列",
+              "fontFamily": "Geist",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "FIGN8",
+              "name": "Link/關於",
+              "fill": "#7A9088",
+              "content": "關於",
+              "fontFamily": "Geist",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MPeD1",
+          "name": "NavActions",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "aT7vL",
+              "name": "SearchIcon",
+              "width": 18,
+              "height": 18,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "#7A9088"
+            },
+            {
+              "type": "frame",
+              "id": "lxklW",
+              "name": "CartChip",
+              "fill": "#C9A96E",
+              "cornerRadius": 9999,
+              "gap": 8,
+              "padding": [
+                8,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "XM05j",
+                  "name": "BagIcon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "shopping-bag",
+                  "library": "lucide",
+                  "fill": "#0E1A14"
+                },
+                {
+                  "type": "text",
+                  "id": "Z0dyBY",
+                  "name": "CartCount",
+                  "fill": "#0E1A14",
+                  "content": "2",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "h1rJpQ",
+      "x": 1520,
+      "y": 0,
+      "name": "01 首頁",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "f8ps7p",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "eaSzz",
+          "name": "Hero",
+          "clip": true,
+          "width": "fill_container",
+          "height": 680,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "X2jw6",
+              "x": 0,
+              "y": 0,
+              "name": "HeroBg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "cvzzn",
+                "link": "https://unsplash.com/@cvzzn",
+                "author": "Renato"
+              },
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1667323567496-de170e328fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYwMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "width": 1440,
+              "height": 680
+            },
+            {
+              "type": "rectangle",
+              "id": "TgYiB",
+              "x": 0,
+              "y": 0,
+              "name": "HeroOverlay",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 90,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0E1A14CC",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0E1A1466",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#0E1A14EE",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 1440,
+              "height": 680
+            },
+            {
+              "type": "frame",
+              "id": "X7o8Gy",
+              "x": 96,
+              "y": 120,
+              "name": "HeroContent",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K0P3G7",
+                  "name": "HeroTag",
+                  "fill": "#C9A96E",
+                  "content": "✦  BOTANICAL COLLECTION  ✦",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "RaWeM",
+                  "name": "HeroTitle",
+                  "fill": "#F0EAD8",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "自然之美\n無聲勝有聲",
+                  "lineHeight": 1.05,
+                  "fontFamily": "Newsreader",
+                  "fontSize": 88,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "YtOjG",
+                  "name": "HeroDesc",
+                  "fill": "#7A9088",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "精選來自世界各地的珍稀花卉，為您的每一個珍貴時刻\n注入大自然最純粹的美麗與溫柔。",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Geist",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "HyCLP",
+                  "name": "HeroCtaRow",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JcW8S",
+                      "name": "HeroCta",
+                      "fill": "#C9A96E",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        14,
+                        36
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "snOnZ",
+                          "name": "HeroCtaLabel",
+                          "fill": "#0E1A14",
+                          "content": "探索花卉",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "K7XdOd",
+                      "name": "HeroCtaAlt",
+                      "fill": "#7A9088",
+                      "content": "了解更多 ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WkljD",
+              "x": 96,
+              "y": 572,
+              "name": "HeroStats",
+              "gap": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "paGpF",
+                  "name": "Stat/精選品種",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZrnJ1",
+                      "name": "StatNum",
+                      "fill": "#C9A96E",
+                      "content": "200+",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 24
+                    },
+                    {
+                      "type": "text",
+                      "id": "XwQau",
+                      "name": "StatLabel",
+                      "fill": "#7A9088",
+                      "content": "精選品種",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NNg20",
+                  "name": "Stat/新鮮配送",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CCOqw",
+                      "name": "StatNum",
+                      "fill": "#C9A96E",
+                      "content": "48h",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 24
+                    },
+                    {
+                      "type": "text",
+                      "id": "C5ehS",
+                      "name": "StatLabel",
+                      "fill": "#7A9088",
+                      "content": "新鮮配送",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jTC19",
+                  "name": "Stat/顧客評價",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zvmQZ",
+                      "name": "StatNum",
+                      "fill": "#C9A96E",
+                      "content": "5★",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 24
+                    },
+                    {
+                      "type": "text",
+                      "id": "O9LAc",
+                      "name": "StatLabel",
+                      "fill": "#7A9088",
+                      "content": "顧客評價",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jIvN9",
+          "name": "FeaturedSection",
+          "width": "fill_container",
+          "fill": "#0E1A14",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            96
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nYsTQ",
+              "name": "SecHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wB9VW",
+                  "name": "SecLeft",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oYYo0",
+                      "name": "SecEye",
+                      "fill": "#C9A96E",
+                      "content": "✦  精選花卉",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "vv8GY",
+                      "name": "SecTitle",
+                      "fill": "#F0EAD8",
+                      "content": "當季推薦",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 44,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "TBXlo",
+                  "name": "ViewAll",
+                  "fill": "#7A9088",
+                  "content": "查看全部 →",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AH8WM",
+              "name": "ProductGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c3hgUA",
+                  "name": "PCard/暗紫繡球",
+                  "clip": true,
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#000000B3",
+                    "offset": {
+                      "x": 0,
+                      "y": 12
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G2qRza",
+                      "name": "PImg/暗紫繡球",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 280,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "OYNCV",
+                          "x": 0,
+                          "y": 0,
+                          "name": "PImgBg/暗紫繡球",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "anniespratt",
+                            "link": "https://unsplash.com/@anniespratt",
+                            "author": "Annie Spratt"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1632729338515-92a547048c11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 310,
+                          "height": 280
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Tc12t",
+                          "x": 14,
+                          "y": 14,
+                          "name": "PTag/暗紫繡球",
+                          "fill": "#C9A96E",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qDnpe",
+                              "name": "PTagLbl/暗紫繡球",
+                              "fill": "#0E1A14",
+                              "content": "稀有",
+                              "fontFamily": "Geist",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "do5lK",
+                      "name": "PBody/暗紫繡球",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XT6BV",
+                          "name": "PName/暗紫繡球",
+                          "fill": "#F0EAD8",
+                          "content": "暗紫繡球",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 19
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AvOI0",
+                          "name": "PPriceRow/暗紫繡球",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "k1lYSr",
+                              "name": "PPrice/暗紫繡球",
+                              "fill": "#C9A96E",
+                              "content": "NT$680",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WVy3B",
+                              "name": "PAdd/暗紫繡球",
+                              "cornerRadius": 9999,
+                              "stroke": "#2A3D33",
+                              "strokeWidth": 1,
+                              "padding": [
+                                6,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Z2OkZK",
+                                  "name": "PAddLbl/暗紫繡球",
+                                  "fill": "#7A9088",
+                                  "content": "+ 加入",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BlcWr",
+                  "name": "PCard/黑魔法玫瑰",
+                  "clip": true,
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#000000B3",
+                    "offset": {
+                      "x": 0,
+                      "y": 12
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rfkaG",
+                      "name": "PImg/黑魔法玫瑰",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 280,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "TUqCT",
+                          "x": 0,
+                          "y": 0,
+                          "name": "PImgBg/黑魔法玫瑰",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "kathieshi",
+                            "link": "https://unsplash.com/@kathieshi",
+                            "author": "Kathie shi"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1693173520123-6c69a7f01216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 310,
+                          "height": 280
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C74tyE",
+                          "x": 14,
+                          "y": 14,
+                          "name": "PTag/黑魔法玫瑰",
+                          "fill": "#C9A96E",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "G8ivQQ",
+                              "name": "PTagLbl/黑魔法玫瑰",
+                              "fill": "#0E1A14",
+                              "content": "限量",
+                              "fontFamily": "Geist",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DLnCH",
+                      "name": "PBody/黑魔法玫瑰",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ERbbl",
+                          "name": "PName/黑魔法玫瑰",
+                          "fill": "#F0EAD8",
+                          "content": "黑魔法玫瑰",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 19
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kNYBu",
+                          "name": "PPriceRow/黑魔法玫瑰",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CQsNM",
+                              "name": "PPrice/黑魔法玫瑰",
+                              "fill": "#C9A96E",
+                              "content": "NT$980",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "wpAAK",
+                              "name": "PAdd/黑魔法玫瑰",
+                              "cornerRadius": 9999,
+                              "stroke": "#2A3D33",
+                              "strokeWidth": 1,
+                              "padding": [
+                                6,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yeHwF",
+                                  "name": "PAddLbl/黑魔法玫瑰",
+                                  "fill": "#7A9088",
+                                  "content": "+ 加入",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DfZMJ",
+                  "name": "PCard/霧面鬱金香",
+                  "clip": true,
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#000000B3",
+                    "offset": {
+                      "x": 0,
+                      "y": 12
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "QRbcq",
+                      "name": "PImg/霧面鬱金香",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 280,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "w0ylS",
+                          "x": 0,
+                          "y": 0,
+                          "name": "PImgBg/霧面鬱金香",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "anyutakejbalo",
+                            "link": "https://unsplash.com/@anyutakejbalo",
+                            "author": "Anna Keibalo"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1741465899312-a6d32884b343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 310,
+                          "height": 280
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GPe2I",
+                          "x": 14,
+                          "y": 14,
+                          "name": "PTag/霧面鬱金香",
+                          "fill": "#C9A96E",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FHH5e",
+                              "name": "PTagLbl/霧面鬱金香",
+                              "fill": "#0E1A14",
+                              "content": "當季",
+                              "fontFamily": "Geist",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gN0GA",
+                      "name": "PBody/霧面鬱金香",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Z99j3",
+                          "name": "PName/霧面鬱金香",
+                          "fill": "#F0EAD8",
+                          "content": "霧面鬱金香",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 19
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kyZMH",
+                          "name": "PPriceRow/霧面鬱金香",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "e5hJJR",
+                              "name": "PPrice/霧面鬱金香",
+                              "fill": "#C9A96E",
+                              "content": "NT$580",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "RScx9",
+                              "name": "PAdd/霧面鬱金香",
+                              "cornerRadius": 9999,
+                              "stroke": "#2A3D33",
+                              "strokeWidth": 1,
+                              "padding": [
+                                6,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "cmo6T",
+                                  "name": "PAddLbl/霧面鬱金香",
+                                  "fill": "#7A9088",
+                                  "content": "+ 加入",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sZn76",
+                  "name": "PCard/夜晚茉莉束",
+                  "clip": true,
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#000000B3",
+                    "offset": {
+                      "x": 0,
+                      "y": 12
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s6oJq",
+                      "name": "PImg/夜晚茉莉束",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 280,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "tkh4P",
+                          "x": 0,
+                          "y": 0,
+                          "name": "PImgBg/夜晚茉莉束",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "shourjodeepghosh7367",
+                            "link": "https://unsplash.com/@shourjodeepghosh7367",
+                            "author": "Shourjodeep Ghosh"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1646808282953-e5d246694fd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 310,
+                          "height": 280
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fuzGs",
+                          "x": 14,
+                          "y": 14,
+                          "name": "PTag/夜晚茉莉束",
+                          "fill": "#C9A96E",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ypL4F",
+                              "name": "PTagLbl/夜晚茉莉束",
+                              "fill": "#0E1A14",
+                              "content": "芬芳",
+                              "fontFamily": "Geist",
+                              "fontSize": 10,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vtYa0",
+                      "name": "PBody/夜晚茉莉束",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YTU5G",
+                          "name": "PName/夜晚茉莉束",
+                          "fill": "#F0EAD8",
+                          "content": "夜晚茉莉束",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 19
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RCmht",
+                          "name": "PPriceRow/夜晚茉莉束",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NcVvl",
+                              "name": "PPrice/夜晚茉莉束",
+                              "fill": "#C9A96E",
+                              "content": "NT$480",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Gtmkk",
+                              "name": "PAdd/夜晚茉莉束",
+                              "cornerRadius": 9999,
+                              "stroke": "#2A3D33",
+                              "strokeWidth": 1,
+                              "padding": [
+                                6,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "n6XRU",
+                                  "name": "PAddLbl/夜晚茉莉束",
+                                  "fill": "#7A9088",
+                                  "content": "+ 加入",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "a408a",
+          "name": "SectionDiv",
+          "fill": "#2A3D33",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "W5y68i",
+          "name": "CtaBanner",
+          "width": "fill_container",
+          "height": 200,
+          "fill": "#162318",
+          "padding": [
+            0,
+            96
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CF26I",
+              "name": "CtaLeft",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j8u6H",
+                  "name": "CtaTitle",
+                  "fill": "#F0EAD8",
+                  "content": "訂閱最新花況",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 36,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "cQZ7m",
+                  "name": "CtaSub",
+                  "fill": "#7A9088",
+                  "content": "每週收到獨家優惠與當季精選",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qKDyk",
+              "name": "CtaRight",
+              "clip": true,
+              "cornerRadius": 9999,
+              "stroke": "#2A3D33",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b0Ztsh",
+                  "name": "CtaInput",
+                  "fill": "#1A2D24",
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DrodY",
+                      "name": "CtaPlaceholder",
+                      "fill": "#7A9088",
+                      "content": "您的電子信箱",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EpGIm",
+                  "name": "CtaSubBtn",
+                  "fill": "#C9A96E",
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aqQla",
+                      "name": "CtaSubLbl",
+                      "fill": "#0E1A14",
+                      "content": "訂閱",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HOwfA",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0E1A14",
+          "stroke": "#2A3D33",
+          "strokeWidth": {
+            "top": 1
+          },
+          "padding": [
+            48,
+            96
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d0vpuK",
+              "name": "FBrand",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lxGOS",
+                  "name": "FLogo",
+                  "fill": "#F0EAD8",
+                  "content": "BLOOM",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 22,
+                  "fontWeight": "normal",
+                  "letterSpacing": 6
+                },
+                {
+                  "type": "text",
+                  "id": "T4XUKo",
+                  "name": "FTagline",
+                  "fill": "#7A9088",
+                  "content": "大自然最純粹的美麗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ysge8",
+              "name": "FCol/商品",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SSUqO",
+                  "name": "FColTitle/商品",
+                  "fill": "#C9A96E",
+                  "content": "商品",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "V1KhpO",
+                  "name": "FItem/鮮花花束",
+                  "fill": "#7A9088",
+                  "content": "鮮花花束",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cALc3",
+                  "name": "FItem/盆栽植物",
+                  "fill": "#7A9088",
+                  "content": "盆栽植物",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RcwAo",
+                  "name": "FItem/乾燥花",
+                  "fill": "#7A9088",
+                  "content": "乾燥花",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BWIzq",
+              "name": "FCol/服務",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ld4oR",
+                  "name": "FColTitle/服務",
+                  "fill": "#C9A96E",
+                  "content": "服務",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "rdqa8",
+                  "name": "FItem/配送政策",
+                  "fill": "#7A9088",
+                  "content": "配送政策",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rJHJr",
+                  "name": "FItem/退換說明",
+                  "fill": "#7A9088",
+                  "content": "退換說明",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Y4ZUf",
+                  "name": "FItem/常見問題",
+                  "fill": "#7A9088",
+                  "content": "常見問題",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ez08V",
+      "x": 3040,
+      "y": 0,
+      "name": "02 商品詳情",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "E2lTE",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "XUC95",
+          "name": "PDPBody",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m2Ei4",
+              "name": "ImgSide",
+              "width": 680,
+              "layout": "vertical",
+              "padding": [
+                48,
+                48,
+                48,
+                96
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S8z7Ok",
+                  "name": "MainImg",
+                  "clip": true,
+                  "width": 540,
+                  "height": 540,
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#000000B3",
+                    "offset": {
+                      "x": 0,
+                      "y": 16
+                    },
+                    "blur": 40
+                  },
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Tcmyc",
+                      "name": "MainBg",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "alexandristom",
+                        "link": "https://unsplash.com/@alexandristom",
+                        "author": "Alexandr Istomin"
+                      },
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1691080554277-0bae95061bd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "width": 540,
+                      "height": 540
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JviEw",
+                  "name": "ThumbRow",
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u1dCLs",
+                      "name": "Thumb/0",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "cornerRadius": 8,
+                      "stroke": "#C9A96E",
+                      "strokeWidth": 2,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "yTYU3",
+                          "name": "ThBg/0",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "alechash",
+                            "link": "https://unsplash.com/@alechash",
+                            "author": "Jude Wilson 🚀"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1692235464193-2b40a4165dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 80,
+                          "height": 80
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CKnS5",
+                      "name": "Thumb/1",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "nCsoY",
+                          "name": "ThBg/1",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "bkaraivanov",
+                            "link": "https://unsplash.com/@bkaraivanov",
+                            "author": "Bozhin Karaivanov"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1714574267857-5b823879e253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 80,
+                          "height": 80
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Toh0O",
+                      "name": "Thumb/2",
+                      "clip": true,
+                      "width": 80,
+                      "height": 80,
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "s62c8",
+                          "name": "ThBg/2",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "hayakasa",
+                            "link": "https://unsplash.com/@hayakasa",
+                            "author": "Ryoji Hayasaka"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1539083943273-138a8ba5486d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 80,
+                          "height": 80
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VpEdm",
+              "name": "InfoSide",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                56,
+                96,
+                56,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VsIo8",
+                  "name": "PTag",
+                  "fill": "#C9A96E",
+                  "content": "✦  LIMITED EDITION",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "w5F4AT",
+                  "name": "PTitle",
+                  "fill": "#F0EAD8",
+                  "content": "黑魔法\n玫瑰花束",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Newsreader",
+                  "fontSize": 56,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "cVqZU",
+                  "name": "RatingRow",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bullO",
+                      "name": "Stars",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "S73KHN",
+                          "name": "S0",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "Fvfzz",
+                          "name": "S1",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "r7WVyb",
+                          "name": "S2",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "f7J84",
+                          "name": "S3",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "HdDZC",
+                          "name": "S4",
+                          "width": 13,
+                          "height": 13,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "tB61e",
+                      "name": "RatingText",
+                      "fill": "#7A9088",
+                      "content": "4.9 (86)",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oWxEy",
+                  "name": "PriceBlock",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "alk3R",
+                      "name": "PriceMain",
+                      "fill": "#C9A96E",
+                      "content": "NT$ 980",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 40
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wAz9R",
+                      "name": "LimitBadge",
+                      "fill": "#C9A96E22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        4,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Nd8Vc",
+                          "name": "LimitText",
+                          "fill": "#C9A96E",
+                          "content": "僅剩 3 束",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Est7o",
+                  "name": "PDesc",
+                  "fill": "#7A9088",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "神秘而深邃的黑魔法玫瑰，以其獨特的深紅紫色調聞名於世。每一朵都如同夜空中最黑暗的星辰，散發著令人窒息的美麗與神秘氣息。",
+                  "lineHeight": 1.75,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "lq6Gb",
+                  "name": "Div",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "iX3V4",
+                  "name": "QtyRow",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pOztv",
+                      "name": "QtyCtrl",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "RVgHo",
+                          "name": "QB/−",
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "OmUNn",
+                              "name": "QBL/−",
+                              "fill": "#F0EAD8",
+                              "content": "−",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MwKe4",
+                          "name": "QB/ 1 ",
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "H2U0Fo",
+                              "name": "QBL/ 1 ",
+                              "fill": "#F0EAD8",
+                              "content": " 1 ",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "i82xQ",
+                          "name": "QB/+",
+                          "padding": [
+                            10,
+                            16
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "eGbGj",
+                              "name": "QBL/+",
+                              "fill": "#F0EAD8",
+                              "content": "+",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "cTUSq",
+                      "name": "StockNote",
+                      "fill": "#6B9E6B",
+                      "content": "庫存充足",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zFvSM",
+                  "name": "AddBtn",
+                  "width": "fill_container",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "suXoQ",
+                      "name": "BagIcon2",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "shopping-bag",
+                      "library": "lucide",
+                      "fill": "#0E1A14"
+                    },
+                    {
+                      "type": "text",
+                      "id": "r60te",
+                      "name": "AddBtnLabel",
+                      "fill": "#0E1A14",
+                      "content": "加入購物車",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RIP6s",
+                  "name": "WishBtn",
+                  "width": "fill_container",
+                  "cornerRadius": 9999,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "eLrh8",
+                      "name": "HeartIcon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#7A9088"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JFqEq",
+                      "name": "WishLabel",
+                      "fill": "#7A9088",
+                      "content": "收藏",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "EPZfy",
+      "x": 4560,
+      "y": 0,
+      "name": "03 購物車",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "K7jIgk",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "HpBfw",
+          "name": "CartWrap",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            56,
+            96
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "hWQxT",
+              "name": "CartLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MttQz",
+                  "name": "CartTitleRow",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    0,
+                    28,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Zmxz3",
+                      "name": "CartTitle",
+                      "fill": "#F0EAD8",
+                      "content": "購物車",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 40,
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UtKzI",
+                      "name": "CartItemCount",
+                      "fill": "#7A9088",
+                      "content": "3 件商品",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "vdShc",
+                  "name": "DivTop",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "S5QETX",
+                  "name": "CI/黑魔法玫瑰花束",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yYqhu",
+                      "name": "CIImg/黑魔法玫瑰花束",
+                      "clip": true,
+                      "width": 90,
+                      "height": 90,
+                      "cornerRadius": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "XSHCc",
+                          "name": "CIImgBg/黑魔法玫瑰花束",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "asabasai",
+                            "link": "https://unsplash.com/@asabasai",
+                            "author": "C Cai"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1724504357094-42fe38963d66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 90,
+                          "height": 90
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w8NE9",
+                      "name": "CIInfo/黑魔法玫瑰花束",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g5tyjd",
+                          "name": "CIName/黑魔法玫瑰花束",
+                          "fill": "#F0EAD8",
+                          "content": "黑魔法玫瑰花束",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lkN8B",
+                          "name": "CIPrice/黑魔法玫瑰花束",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 980",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DVB1r",
+                      "name": "CICtrl/黑魔法玫瑰花束",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MTylY",
+                          "name": "QC/黑魔法玫瑰花束",
+                          "cornerRadius": 8,
+                          "stroke": "#2A3D33",
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "tuH9B",
+                              "name": "QB/黑魔法玫瑰花束−",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MWJ7v",
+                                  "name": "QBL/黑魔法玫瑰花束−",
+                                  "fill": "#F0EAD8",
+                                  "content": "−",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gmYpj",
+                              "name": "QB/黑魔法玫瑰花束1",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "axaAP",
+                                  "name": "QBL/黑魔法玫瑰花束1",
+                                  "fill": "#F0EAD8",
+                                  "content": "1",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "TeoPO",
+                              "name": "QB/黑魔法玫瑰花束+",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XcLX6",
+                                  "name": "QBL/黑魔法玫瑰花束+",
+                                  "fill": "#F0EAD8",
+                                  "content": "+",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DqVHc",
+                          "name": "CITotal/黑魔法玫瑰花束",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 980",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SaRce",
+                          "name": "Trash/黑魔法玫瑰花束",
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "NiUpL",
+                              "name": "TrashI/黑魔法玫瑰花束",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "#7A9088"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "x0M34",
+                  "name": "RowDiv/黑魔法玫瑰花束",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "jr1ET",
+                  "name": "CI/暗紫繡球束",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "I5lDy",
+                      "name": "CIImg/暗紫繡球束",
+                      "clip": true,
+                      "width": 90,
+                      "height": 90,
+                      "cornerRadius": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "I0Nd7D",
+                          "name": "CIImgBg/暗紫繡球束",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "anniespratt",
+                            "link": "https://unsplash.com/@anniespratt",
+                            "author": "Annie Spratt"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1628001734418-a8dee697fb7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 90,
+                          "height": 90
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wQFSB",
+                      "name": "CIInfo/暗紫繡球束",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l5f7S",
+                          "name": "CIName/暗紫繡球束",
+                          "fill": "#F0EAD8",
+                          "content": "暗紫繡球束",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zocJT",
+                          "name": "CIPrice/暗紫繡球束",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 680",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rFUoC",
+                      "name": "CICtrl/暗紫繡球束",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SP40Q",
+                          "name": "QC/暗紫繡球束",
+                          "cornerRadius": 8,
+                          "stroke": "#2A3D33",
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "fCbwV",
+                              "name": "QB/暗紫繡球束−",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ebd5l",
+                                  "name": "QBL/暗紫繡球束−",
+                                  "fill": "#F0EAD8",
+                                  "content": "−",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YjmYF",
+                              "name": "QB/暗紫繡球束2",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "cZhcd",
+                                  "name": "QBL/暗紫繡球束2",
+                                  "fill": "#F0EAD8",
+                                  "content": "2",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nxaUP",
+                              "name": "QB/暗紫繡球束+",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "tmYGW",
+                                  "name": "QBL/暗紫繡球束+",
+                                  "fill": "#F0EAD8",
+                                  "content": "+",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "xk4aD",
+                          "name": "CITotal/暗紫繡球束",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 1360",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "utAdo",
+                          "name": "Trash/暗紫繡球束",
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "OOB7c",
+                              "name": "TrashI/暗紫繡球束",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "#7A9088"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "OZEWd",
+                  "name": "RowDiv/暗紫繡球束",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "xAdNQ",
+                  "name": "CI/霧面鬱金香",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dtaZN",
+                      "name": "CIImg/霧面鬱金香",
+                      "clip": true,
+                      "width": 90,
+                      "height": 90,
+                      "cornerRadius": 8,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "RRkNF",
+                          "name": "CIImgBg/霧面鬱金香",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "hypocriteeeee",
+                            "link": "https://unsplash.com/@hypocriteeeee",
+                            "author": "Zhang qc"
+                          },
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1773236759289-251d9687b6e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          },
+                          "width": 90,
+                          "height": 90
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m8Ovdz",
+                      "name": "CIInfo/霧面鬱金香",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o1HTs",
+                          "name": "CIName/霧面鬱金香",
+                          "fill": "#F0EAD8",
+                          "content": "霧面鬱金香",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FTRI0",
+                          "name": "CIPrice/霧面鬱金香",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 580",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FSAjS",
+                      "name": "CICtrl/霧面鬱金香",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "h39qE",
+                          "name": "QC/霧面鬱金香",
+                          "cornerRadius": 8,
+                          "stroke": "#2A3D33",
+                          "strokeWidth": 1,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cxhsT",
+                              "name": "QB/霧面鬱金香−",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "kqpjQ",
+                                  "name": "QBL/霧面鬱金香−",
+                                  "fill": "#F0EAD8",
+                                  "content": "−",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "H32tP",
+                              "name": "QB/霧面鬱金香1",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "NWzrS",
+                                  "name": "QBL/霧面鬱金香1",
+                                  "fill": "#F0EAD8",
+                                  "content": "1",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "S3KF5",
+                              "name": "QB/霧面鬱金香+",
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nKXnB",
+                                  "name": "QBL/霧面鬱金香+",
+                                  "fill": "#F0EAD8",
+                                  "content": "+",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "pSAQe",
+                          "name": "CITotal/霧面鬱金香",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 580",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Q26y4B",
+                          "name": "Trash/霧面鬱金香",
+                          "padding": 8,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "ChoJU",
+                              "name": "TrashI/霧面鬱金香",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "trash-2",
+                              "library": "lucide",
+                              "fill": "#7A9088"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "Fb0C7",
+                  "name": "RowDiv/霧面鬱金香",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ae1sP",
+              "name": "CartSummary",
+              "width": 360,
+              "fill": "#1A2D24",
+              "cornerRadius": 12,
+              "stroke": "#2A3D33",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#000000B3",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H1sv1",
+                  "name": "SumTitle",
+                  "fill": "#F0EAD8",
+                  "content": "訂單摘要",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 24
+                },
+                {
+                  "type": "frame",
+                  "id": "vt0Ot",
+                  "name": "SR/商品小計",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XiBKj",
+                      "name": "SRL/商品小計",
+                      "fill": "#7A9088",
+                      "content": "商品小計",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jxCbx",
+                      "name": "SRV/商品小計",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 2,920",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nw0Kx",
+                  "name": "SR/運費",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UWvWJ",
+                      "name": "SRL/運費",
+                      "fill": "#7A9088",
+                      "content": "運費",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xNcf5",
+                      "name": "SRV/運費",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 120",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hgZN8",
+                  "name": "SR/優惠折扣",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qslBO",
+                      "name": "SRL/優惠折扣",
+                      "fill": "#7A9088",
+                      "content": "優惠折扣",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K0NZ6",
+                      "name": "SRV/優惠折扣",
+                      "fill": "#F0EAD8",
+                      "content": "- NT$ 0",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "pmOCV",
+                  "name": "SDiv",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "U97dLU",
+                  "name": "TotalRow",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mgOdj",
+                      "name": "TotalLabel",
+                      "fill": "#F0EAD8",
+                      "content": "合計",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "v8FC6",
+                      "name": "TotalVal",
+                      "fill": "#C9A96E",
+                      "content": "NT$ 3,040",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q72y5v",
+                  "name": "CheckoutBtn",
+                  "width": "fill_container",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Aebtu",
+                      "name": "CheckoutLabel",
+                      "fill": "#0E1A14",
+                      "content": "前往結帳",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jgj5c",
+      "x": 6080,
+      "y": 0,
+      "name": "04 結帳",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "w038MC",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "KPFkv",
+          "name": "CoBody",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            56,
+            96
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "iaFvI",
+              "name": "FormCol",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MnkZE",
+                  "name": "CoTitle",
+                  "fill": "#F0EAD8",
+                  "content": "填寫收件資訊",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 40,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "r0FACt",
+                  "name": "CoStep",
+                  "fill": "#C9A96E",
+                  "content": "✦  步驟 2 / 2",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "T0e8uI",
+                  "name": "FG/收件人姓名",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DvzC1",
+                      "name": "FL/收件人姓名",
+                      "fill": "#7A9088",
+                      "content": "收件人姓名",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ju69m",
+                      "name": "IN/收件人姓名",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QaX4X",
+                          "name": "IP/收件人姓名",
+                          "fill": "#4A6058",
+                          "content": "請輸入您的姓名",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Pfdcf",
+                  "name": "FG/電子信箱",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p8iZwn",
+                      "name": "FL/電子信箱",
+                      "fill": "#7A9088",
+                      "content": "電子信箱",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fesFY",
+                      "name": "IN/電子信箱",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LG6Rd",
+                          "name": "IP/電子信箱",
+                          "fill": "#4A6058",
+                          "content": "example@email.com",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "W9oxU",
+                  "name": "FG/收件地址",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "u2R33",
+                      "name": "FL/收件地址",
+                      "fill": "#7A9088",
+                      "content": "收件地址",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SEfyf",
+                      "name": "IN/收件地址",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rSt9o",
+                          "name": "IP/收件地址",
+                          "fill": "#4A6058",
+                          "content": "台北市⋯",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KuIXk",
+                  "name": "PayCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oyG9Z",
+                      "name": "PayTitle",
+                      "fill": "#7A9088",
+                      "content": "付款方式",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rzEh7",
+                      "name": "PR/信用卡 / 簽帳卡",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "cornerRadius": 8,
+                      "stroke": "#C9A96E",
+                      "strokeWidth": 1,
+                      "gap": 14,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "lPE9T",
+                          "name": "Rad/信用卡 / 簽帳卡",
+                          "innerRadius": 0.4,
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": "#C9A96E",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "icon",
+                          "id": "O03mY",
+                          "name": "PIco/信用卡 / 簽帳卡",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "credit-card",
+                          "library": "lucide",
+                          "fill": "#C9A96E"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BvH5x",
+                          "name": "PL/信用卡 / 簽帳卡",
+                          "fill": "#F0EAD8",
+                          "content": "信用卡 / 簽帳卡",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t2ROQ",
+                      "name": "PR/ATM 轉帳",
+                      "width": "fill_container",
+                      "fill": "#162318",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "gap": 14,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "TbeOi",
+                          "name": "Rad/ATM 轉帳",
+                          "fill": "#0E1A14",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": "#2A3D33",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "icon",
+                          "id": "osO8h",
+                          "name": "PIco/ATM 轉帳",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "landmark",
+                          "library": "lucide",
+                          "fill": "#7A9088"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p4ZYb",
+                          "name": "PL/ATM 轉帳",
+                          "fill": "#7A9088",
+                          "content": "ATM 轉帳",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Tp2Tc",
+                      "name": "PR/貨到付款",
+                      "width": "fill_container",
+                      "fill": "#162318",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "gap": 14,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "sMUhf",
+                          "name": "Rad/貨到付款",
+                          "fill": "#0E1A14",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": "#2A3D33",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "icon",
+                          "id": "C30Er",
+                          "name": "PIco/貨到付款",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "package",
+                          "library": "lucide",
+                          "fill": "#7A9088"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OKdi7",
+                          "name": "PL/貨到付款",
+                          "fill": "#7A9088",
+                          "content": "貨到付款",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TcHNm",
+                  "name": "SubBtn",
+                  "width": "fill_container",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KWNKa",
+                      "name": "SubLabel",
+                      "fill": "#0E1A14",
+                      "content": "確認訂單",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Q30Ye",
+              "name": "OPanel",
+              "width": 360,
+              "fill": "#1A2D24",
+              "cornerRadius": 12,
+              "stroke": "#2A3D33",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "B8783",
+                  "name": "OPTitle",
+                  "fill": "#F0EAD8",
+                  "content": "訂單內容",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 22
+                },
+                {
+                  "type": "frame",
+                  "id": "SaqZ1",
+                  "name": "OR2/黑魔法玫瑰花束 × 1",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t8FBo",
+                      "name": "ON2/黑魔法玫瑰花束 × 1",
+                      "fill": "#7A9088",
+                      "textGrowth": "fixed-width",
+                      "width": 195,
+                      "content": "黑魔法玫瑰花束 × 1",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x6c90Y",
+                      "name": "OP2/黑魔法玫瑰花束 × 1",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 980",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Vsl4I",
+                  "name": "OR2/暗紫繡球束 × 2",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o6sbkz",
+                      "name": "ON2/暗紫繡球束 × 2",
+                      "fill": "#7A9088",
+                      "textGrowth": "fixed-width",
+                      "width": 195,
+                      "content": "暗紫繡球束 × 2",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OlqmB",
+                      "name": "OP2/暗紫繡球束 × 2",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 1,360",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QNPTI",
+                  "name": "OR2/霧面鬱金香 × 1",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lMGj2",
+                      "name": "ON2/霧面鬱金香 × 1",
+                      "fill": "#7A9088",
+                      "textGrowth": "fixed-width",
+                      "width": 195,
+                      "content": "霧面鬱金香 × 1",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KvHJe",
+                      "name": "OP2/霧面鬱金香 × 1",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 580",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "q0rex",
+                  "name": "OPDiv",
+                  "fill": "#2A3D33",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "CrYu7",
+                  "name": "OTR",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VBKpi",
+                      "name": "OTL",
+                      "fill": "#F0EAD8",
+                      "content": "合計",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E4MvA",
+                      "name": "OTV",
+                      "fill": "#C9A96E",
+                      "content": "NT$ 3,040",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QEeJ2",
+      "x": 7600,
+      "y": 0,
+      "name": "05 登入",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "children": [
+        {
+          "type": "frame",
+          "id": "Qknfb",
+          "name": "LeftPanel",
+          "clip": true,
+          "width": 720,
+          "height": "fill_container",
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "aZ8kK",
+              "x": 0,
+              "y": 0,
+              "name": "LBg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "onaka",
+                "link": "https://unsplash.com/@onaka",
+                "author": "teka nakazawa"
+              },
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1780538778877-0e42a940f525?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTYyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "width": 720,
+              "height": 900
+            },
+            {
+              "type": "rectangle",
+              "id": "WTt3r",
+              "x": 0,
+              "y": 0,
+              "name": "LOverlay",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 90,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0E1A14BB",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0E1A14DD",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 720,
+              "height": 900
+            },
+            {
+              "type": "frame",
+              "id": "e1AON",
+              "x": 80,
+              "y": 80,
+              "name": "LContent",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y5zzQ",
+                  "name": "LLogo",
+                  "fill": "#F0EAD8",
+                  "content": "BLOOM",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 24,
+                  "fontWeight": "normal",
+                  "letterSpacing": 6
+                },
+                {
+                  "type": "text",
+                  "id": "XfG8V",
+                  "name": "LQuote",
+                  "fill": "#F0EAD8",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "\"花朵是\n靈魂的語言\"",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Newsreader",
+                  "fontSize": 52,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "uyXmI",
+                  "name": "LSubtext",
+                  "fill": "#7A9088",
+                  "content": "加入 Bloom，探索大自然最純粹的美麗。",
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jL9h8",
+              "x": 80,
+              "y": 780,
+              "name": "LStats",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lj98m",
+                  "name": "LS/會員",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ULlqw",
+                      "name": "LSN/會員",
+                      "fill": "#C9A96E",
+                      "content": "5,000+",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hmpfA",
+                      "name": "LSL/會員",
+                      "fill": "#7A9088",
+                      "content": "會員",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aO3Sj",
+                  "name": "LS/花卉品種",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WQWKn",
+                      "name": "LSN/花卉品種",
+                      "fill": "#C9A96E",
+                      "content": "200+",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nVaAW",
+                      "name": "LSL/花卉品種",
+                      "fill": "#7A9088",
+                      "content": "花卉品種",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K5Ya2",
+                  "name": "LS/配送",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s2OAvk",
+                      "name": "LSN/配送",
+                      "fill": "#C9A96E",
+                      "content": "全台",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L7VR2",
+                      "name": "LSL/配送",
+                      "fill": "#7A9088",
+                      "content": "配送",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IQBY1",
+          "name": "RightPanel",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#0E1A14",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d9cNqc",
+              "name": "LoginCard",
+              "width": 420,
+              "fill": "#1A2D24",
+              "cornerRadius": 16,
+              "stroke": "#2A3D33",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#000000B3",
+                "offset": {
+                  "x": 0,
+                  "y": 24
+                },
+                "blur": 48
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 48,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J65vsa",
+                  "name": "LCTitle",
+                  "fill": "#F0EAD8",
+                  "content": "歡迎回來",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 34,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "coCQn",
+                  "name": "LCSub",
+                  "fill": "#7A9088",
+                  "content": "登入您的 Bloom 帳號",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "BsoXQ",
+                  "name": "LFG/電子信箱",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Yzifk",
+                      "name": "LFL/電子信箱",
+                      "fill": "#7A9088",
+                      "content": "電子信箱",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N5E68",
+                      "name": "LIN/電子信箱",
+                      "width": 324,
+                      "fill": "#162318",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pZj8p",
+                          "name": "LIP/電子信箱",
+                          "fill": "#3A5248",
+                          "content": "example@email.com",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y6jMDx",
+                  "name": "LFG/密碼",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YpxMt",
+                      "name": "LFL/密碼",
+                      "fill": "#7A9088",
+                      "content": "密碼",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r67Q5",
+                      "name": "LIN/密碼",
+                      "width": 324,
+                      "fill": "#162318",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "quYaF",
+                          "name": "LIP/密碼",
+                          "fill": "#3A5248",
+                          "content": "••••••••",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "NHhVP",
+                          "name": "EyeIco",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "eye-off",
+                          "library": "lucide",
+                          "fill": "#7A9088"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "v8uqe",
+                  "name": "ForgotLink",
+                  "fill": "#C9A96E",
+                  "content": "忘記密碼？",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "JPYDO",
+                  "name": "LoginBtn",
+                  "width": "fill_container",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "D6UxaC",
+                      "name": "LoginBtnLbl",
+                      "fill": "#0E1A14",
+                      "content": "登入",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z2119p",
+                  "name": "OrRow",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "t5ZY4c",
+                      "name": "OrL",
+                      "fill": "#2A3D33",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "QEfT4",
+                      "name": "OrT",
+                      "fill": "#7A9088",
+                      "content": "或",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "P67g9",
+                      "name": "OrR",
+                      "fill": "#2A3D33",
+                      "width": "fill_container",
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CuWna",
+                  "name": "RegRow",
+                  "gap": 4,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vAC6I",
+                      "name": "RegT",
+                      "fill": "#7A9088",
+                      "content": "還沒帳號？",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O94y1",
+                      "name": "RegL",
+                      "fill": "#C9A96E",
+                      "content": "立即免費加入 →",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wzoJg",
+      "x": 9120,
+      "y": 0,
+      "name": "06 訂單列表",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "UthAC",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "eiyrG",
+          "name": "OrdersBody",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            56,
+            96
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "B4bVCu",
+              "name": "OrdersHdr",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mtox4",
+                  "name": "OrdersTitle",
+                  "fill": "#F0EAD8",
+                  "content": "我的訂單",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 44,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "fiOWX",
+                  "name": "OrdersCount",
+                  "fill": "#7A9088",
+                  "content": "共 4 筆訂單",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WrtSo",
+              "name": "StatusTabs",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WNRKT",
+                  "name": "Tab/全部",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "stroke": "#C9A96E",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "whbvs",
+                      "name": "TL/全部",
+                      "fill": "#0E1A14",
+                      "content": "全部",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E50vTC",
+                  "name": "Tab/待付款",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 9999,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V02z5",
+                      "name": "TL/待付款",
+                      "fill": "#7A9088",
+                      "content": "待付款",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wiIDW",
+                  "name": "Tab/已付款",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 9999,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fy8Rl",
+                      "name": "TL/已付款",
+                      "fill": "#7A9088",
+                      "content": "已付款",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oDJF6",
+                  "name": "Tab/付款失敗",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 9999,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s6kjGU",
+                      "name": "TL/付款失敗",
+                      "fill": "#7A9088",
+                      "content": "付款失敗",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xvibc",
+              "name": "OrdersList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SDmDt",
+                  "name": "OC/ORD-20260601-00123",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 10,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qhH0O",
+                      "name": "OL/ORD-20260601-00123",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 5,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eaL7P",
+                          "name": "ONo/ORD-20260601-00123",
+                          "fill": "#F0EAD8",
+                          "content": "ORD-20260601-00123",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Sz5r6",
+                          "name": "OIt/ORD-20260601-00123",
+                          "fill": "#7A9088",
+                          "content": "黑魔法玫瑰花束 × 1 等 2 件",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w1IaRy",
+                          "name": "ODt/ORD-20260601-00123",
+                          "fill": "#4A6058",
+                          "content": "2026.06.01",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "NmAgd",
+                      "name": "OTot/ORD-20260601-00123",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 1,660",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E5EMMT",
+                      "name": "OSB/ORD-20260601-00123",
+                      "fill": "#6B9E6B22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZSU8c",
+                          "name": "OSL/ORD-20260601-00123",
+                          "fill": "#6B9E6B",
+                          "content": "已付款",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u0Krl",
+                      "name": "OVB/ORD-20260601-00123",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PHwzZ",
+                          "name": "OVL/ORD-20260601-00123",
+                          "fill": "#7A9088",
+                          "content": "查看 →",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PUyfT",
+                  "name": "OC/ORD-20260528-00098",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 10,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IKQKZ",
+                      "name": "OL/ORD-20260528-00098",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 5,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Qnivs",
+                          "name": "ONo/ORD-20260528-00098",
+                          "fill": "#F0EAD8",
+                          "content": "ORD-20260528-00098",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F1J38",
+                          "name": "OIt/ORD-20260528-00098",
+                          "fill": "#7A9088",
+                          "content": "暗紫繡球束 × 2",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TPf4e",
+                          "name": "ODt/ORD-20260528-00098",
+                          "fill": "#4A6058",
+                          "content": "2026.05.28",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QmxF7",
+                      "name": "OTot/ORD-20260528-00098",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 1,360",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dUXNm",
+                      "name": "OSB/ORD-20260528-00098",
+                      "fill": "#C9A96E22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DRDgD",
+                          "name": "OSL/ORD-20260528-00098",
+                          "fill": "#C9A96E",
+                          "content": "待付款",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fpUsZ",
+                      "name": "OVB/ORD-20260528-00098",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zUmB8",
+                          "name": "OVL/ORD-20260528-00098",
+                          "fill": "#7A9088",
+                          "content": "查看 →",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g6jOcS",
+                  "name": "OC/ORD-20260520-00071",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 10,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nQVEK",
+                      "name": "OL/ORD-20260520-00071",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 5,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o3OAj",
+                          "name": "ONo/ORD-20260520-00071",
+                          "fill": "#F0EAD8",
+                          "content": "ORD-20260520-00071",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aMEvl",
+                          "name": "OIt/ORD-20260520-00071",
+                          "fill": "#7A9088",
+                          "content": "霧面鬱金香 × 1 等 3 件",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AQ0pn",
+                          "name": "ODt/ORD-20260520-00071",
+                          "fill": "#4A6058",
+                          "content": "2026.05.20",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "DhjcQ",
+                      "name": "OTot/ORD-20260520-00071",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 3,040",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mr0XQ",
+                      "name": "OSB/ORD-20260520-00071",
+                      "fill": "#6B9E6B22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FZhAM",
+                          "name": "OSL/ORD-20260520-00071",
+                          "fill": "#6B9E6B",
+                          "content": "已付款",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IwMSJ",
+                      "name": "OVB/ORD-20260520-00071",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Gz4R3",
+                          "name": "OVL/ORD-20260520-00071",
+                          "fill": "#7A9088",
+                          "content": "查看 →",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CvMju",
+                  "name": "OC/ORD-20260510-00055",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 10,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "gap": 20,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X9xoR",
+                      "name": "OL/ORD-20260510-00055",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 5,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F4Vl2",
+                          "name": "ONo/ORD-20260510-00055",
+                          "fill": "#F0EAD8",
+                          "content": "ORD-20260510-00055",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kDmLN",
+                          "name": "OIt/ORD-20260510-00055",
+                          "fill": "#7A9088",
+                          "content": "夜晚茉莉束 × 1",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Pgc5W",
+                          "name": "ODt/ORD-20260510-00055",
+                          "fill": "#4A6058",
+                          "content": "2026.05.10",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LcUAN",
+                      "name": "OTot/ORD-20260510-00055",
+                      "fill": "#F0EAD8",
+                      "content": "NT$ 480",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SD1Z7",
+                      "name": "OSB/ORD-20260510-00055",
+                      "fill": "#C0504D22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O2XRs",
+                          "name": "OSL/ORD-20260510-00055",
+                          "fill": "#C0504D",
+                          "content": "付款失敗",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BnFHA",
+                      "name": "OVB/ORD-20260510-00055",
+                      "cornerRadius": 8,
+                      "stroke": "#2A3D33",
+                      "strokeWidth": 1,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UwNNd",
+                          "name": "OVL/ORD-20260510-00055",
+                          "fill": "#7A9088",
+                          "content": "查看 →",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "O3Mb82",
+      "x": 10640,
+      "y": 0,
+      "name": "07 訂單詳情",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0E1A14",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "FadVh",
+          "type": "ref",
+          "ref": "S02CZS",
+          "name": "Nav",
+          "width": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "c72pNY",
+          "name": "OdBody",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            48,
+            96
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "K4FFFM",
+              "name": "OdLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PYTTI",
+                  "name": "OdTopRow",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rS390",
+                      "name": "OdTB",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o8rla",
+                          "name": "OdTitle",
+                          "fill": "#F0EAD8",
+                          "content": "訂單詳情",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 40,
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MUpIG",
+                          "name": "OdNo",
+                          "fill": "#7A9088",
+                          "content": "ORD-20260601-00123",
+                          "fontFamily": "Geist",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OcLfV",
+                      "name": "OdSB",
+                      "fill": "#6B9E6B22",
+                      "cornerRadius": 9999,
+                      "padding": [
+                        8,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t1l4DJ",
+                          "name": "OdSL",
+                          "fill": "#6B9E6B",
+                          "content": "✦  已付款",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q3DZj",
+                  "name": "ItemsTable",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 12,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IFNf9",
+                      "name": "TableHdr",
+                      "width": "fill_container",
+                      "fill": "#162318",
+                      "padding": [
+                        14,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dSdGi",
+                          "name": "TH/商品",
+                          "fill": "#3A6050",
+                          "content": "商品",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "z1WDp",
+                          "name": "TH/單價",
+                          "fill": "#3A6050",
+                          "content": "單價",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "VwRLd",
+                          "name": "TH/數量",
+                          "fill": "#3A6050",
+                          "content": "數量",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "v9DqbR",
+                          "name": "TH/小計",
+                          "fill": "#3A6050",
+                          "content": "小計",
+                          "fontFamily": "Geist",
+                          "fontSize": 11,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J9tqD",
+                      "name": "TR/黑魔法玫瑰花束",
+                      "width": "fill_container",
+                      "fill": "#1A2D24",
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cjFUx",
+                          "name": "NC/黑魔法玫瑰花束",
+                          "width": 320,
+                          "gap": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KSfHn",
+                              "name": "TH2/黑魔法玫瑰花束",
+                              "clip": true,
+                              "width": 52,
+                              "height": 52,
+                              "cornerRadius": 6,
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "g3dTVi",
+                                  "name": "TH2Bg/黑魔法玫瑰花束",
+                                  "fill": "#2A3D33",
+                                  "width": 52,
+                                  "height": 52
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "u0owOz",
+                              "name": "TN/黑魔法玫瑰花束",
+                              "fill": "#F0EAD8",
+                              "content": "黑魔法玫瑰花束",
+                              "fontFamily": "Newsreader",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "W9pnGB",
+                          "name": "TP/黑魔法玫瑰花束",
+                          "fill": "#7A9088",
+                          "content": "NT$ 980",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RUeFV",
+                          "name": "TQ/黑魔法玫瑰花束",
+                          "fill": "#F0EAD8",
+                          "content": "1",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AVimA",
+                          "name": "TS/黑魔法玫瑰花束",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 980",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yYmzo",
+                      "name": "TR/暗紫繡球束",
+                      "width": "fill_container",
+                      "fill": "#162318",
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HVGjK",
+                          "name": "NC/暗紫繡球束",
+                          "width": 320,
+                          "gap": 14,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "rpTWJ",
+                              "name": "TH2/暗紫繡球束",
+                              "clip": true,
+                              "width": 52,
+                              "height": 52,
+                              "cornerRadius": 6,
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "w7rDxD",
+                                  "name": "TH2Bg/暗紫繡球束",
+                                  "fill": "#2A3D33",
+                                  "width": 52,
+                                  "height": 52
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "PoF53",
+                              "name": "TN/暗紫繡球束",
+                              "fill": "#F0EAD8",
+                              "content": "暗紫繡球束",
+                              "fontFamily": "Newsreader",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "V88IiS",
+                          "name": "TP/暗紫繡球束",
+                          "fill": "#7A9088",
+                          "content": "NT$ 680",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WIlDL",
+                          "name": "TQ/暗紫繡球束",
+                          "fill": "#F0EAD8",
+                          "content": "1",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "X2pG8q",
+                          "name": "TS/暗紫繡球束",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 680",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SVVGp",
+                  "name": "RecipCard",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 12,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MDStc",
+                      "name": "RecipTitle",
+                      "fill": "#F0EAD8",
+                      "content": "收件資訊",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 20
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tHYfH",
+                      "name": "RR/收件人",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k0hnbI",
+                          "name": "RL/收件人",
+                          "fill": "#7A9088",
+                          "content": "收件人",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H64ai",
+                          "name": "RV/收件人",
+                          "fill": "#F0EAD8",
+                          "content": "王小明",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l2PYE6",
+                      "name": "RR/電子信箱",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C4GuOU",
+                          "name": "RL/電子信箱",
+                          "fill": "#7A9088",
+                          "content": "電子信箱",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sDEwC",
+                          "name": "RV/電子信箱",
+                          "fill": "#F0EAD8",
+                          "content": "wang@example.com",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cj92o",
+                      "name": "RR/收件地址",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l1AwU",
+                          "name": "RL/收件地址",
+                          "fill": "#7A9088",
+                          "content": "收件地址",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CCKDI",
+                          "name": "RV/收件地址",
+                          "fill": "#F0EAD8",
+                          "content": "台北市信義區松仁路 100 號",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G3LJPc",
+              "name": "OdRight",
+              "width": 360,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "U0fJu",
+                  "name": "PaySum",
+                  "width": "fill_container",
+                  "fill": "#1A2D24",
+                  "cornerRadius": 12,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qyGrz",
+                      "name": "PSTitle",
+                      "fill": "#F0EAD8",
+                      "content": "付款摘要",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 20
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nzDuA",
+                      "name": "PSR/商品小計",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RIPhz",
+                          "name": "PSL/商品小計",
+                          "fill": "#7A9088",
+                          "content": "商品小計",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aHGK9",
+                          "name": "PSV/商品小計",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 1,660",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PtCw3",
+                      "name": "PSR/運費",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Q1Hrt",
+                          "name": "PSL/運費",
+                          "fill": "#7A9088",
+                          "content": "運費",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "igvIp",
+                          "name": "PSV/運費",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 120",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pvmr5",
+                      "name": "PSR/折扣",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WUOrP",
+                          "name": "PSL/折扣",
+                          "fill": "#7A9088",
+                          "content": "折扣",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NA16O",
+                          "name": "PSV/折扣",
+                          "fill": "#F0EAD8",
+                          "content": "NT$ 0",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "wwOto",
+                      "name": "PSDiv",
+                      "fill": "#2A3D33",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kclS2",
+                      "name": "PSTR",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A08iB3",
+                          "name": "PSTL",
+                          "fill": "#F0EAD8",
+                          "content": "合計",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PmrJ5",
+                          "name": "PSTV",
+                          "fill": "#C9A96E",
+                          "content": "NT$ 1,780",
+                          "fontFamily": "Newsreader",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YodUj",
+                  "name": "EcpBtn",
+                  "width": "fill_container",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "GrXc4",
+                      "name": "EcpIco",
+                      "width": 17,
+                      "height": 17,
+                      "icon": "credit-card",
+                      "library": "lucide",
+                      "fill": "#0E1A14"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JFlin",
+                      "name": "EcpLbl",
+                      "fill": "#0E1A14",
+                      "content": "前往綠界付款",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dfH70",
+                  "name": "BackBtn",
+                  "width": "fill_container",
+                  "cornerRadius": 9999,
+                  "stroke": "#2A3D33",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L3qeI",
+                      "name": "BackLbl",
+                      "fill": "#7A9088",
+                      "content": "← 返回訂單列表",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<div id="app" style="padding:3.5rem 6rem;">
+
+  <div v-if="loading" style="display:flex;justify-content:center;padding:5rem 0;">
+    <div class="spinner"></div>
+  </div>
+
+  <div v-else-if="items.length === 0" style="text-align:center;padding:6rem 0;">
+    <p style="font-family:'Newsreader',serif;font-size:3rem;color:#2A3D33;margin-bottom:1rem;">✦</p>
+    <p style="font-family:'Newsreader',serif;font-size:1.5rem;font-style:italic;color:#F0EAD8;margin-bottom:0.5rem;">購物車是空的</p>
+    <p style="font-size:0.875rem;color:#7A9088;margin-bottom:2rem;">快去挑選喜歡的花束吧！</p>
+    <a href="/" class="btn-gold">去逛逛</a>
+  </div>
+
+  <template v-else>
+    <div style="display:flex;gap:40px;align-items:flex-start;">
+
+      <!-- Left: Items -->
+      <div style="flex:1;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:1.5rem;border-bottom:1px solid #2A3D33;">
+          <h1 class="font-display" style="font-family:'Newsreader',serif;font-size:2.5rem;font-style:italic;color:#F0EAD8;">購物車</h1>
+          <span style="font-size:0.8rem;color:#7A9088;">{{ items.length }} 件商品</span>
+        </div>
+
+        <div
+          v-for="item in items"
+          :key="item.id"
+          style="display:flex;align-items:center;gap:1.25rem;padding:1.4rem 0;border-bottom:1px solid #2A3D33;"
+        >
+          <img
+            :src="item.product.image_url || 'https://images.unsplash.com/photo-1565279445322-30ab5314ff94?w=100'"
+            :alt="item.product.name"
+            style="width:90px;height:90px;border-radius:8px;object-fit:cover;flex-shrink:0;"
+          />
+          <div style="flex:1;">
+            <p class="font-display" style="font-family:'Newsreader',serif;font-size:1.1rem;color:#F0EAD8;margin-bottom:0.25rem;">{{ item.product.name }}</p>
+            <p style="font-size:0.8rem;color:#C9A96E;">NT$ {{ item.product.price.toLocaleString() }}</p>
+          </div>
+          <!-- Qty -->
+          <div style="display:flex;border:1px solid #2A3D33;border-radius:0.5rem;overflow:hidden;">
+            <button @click="updateQuantity(item.id, item.quantity - 1)" :disabled="item.quantity <= 1"
+              style="padding:0.4rem 0.75rem;background:transparent;color:#F0EAD8;border:none;cursor:pointer;opacity:1;"
+              :style="{opacity: item.quantity<=1?'0.35':'1'}">−</button>
+            <span style="padding:0.4rem 0.75rem;color:#F0EAD8;border-left:1px solid #2A3D33;border-right:1px solid #2A3D33;min-width:2.5rem;text-align:center;font-size:0.875rem;">{{ item.quantity }}</span>
+            <button @click="updateQuantity(item.id, item.quantity + 1)" :disabled="item.quantity >= item.product.stock"
+              style="padding:0.4rem 0.75rem;background:transparent;color:#F0EAD8;border:none;cursor:pointer;">+</button>
+          </div>
+          <p style="font-size:0.875rem;font-weight:500;color:#F0EAD8;min-width:6rem;text-align:right;">
+            NT$ {{ (item.product.price * item.quantity).toLocaleString() }}
+          </p>
+          <button @click="confirmDelete(item.id)" style="background:transparent;border:none;cursor:pointer;color:#3A6050;padding:0.25rem;transition:color 0.15s;"
+            onmouseover="this.style.color='#C0504D'" onmouseout="this.style.color='#3A6050'">✕</button>
+        </div>
+      </div>
+
+      <!-- Right: Summary -->
+      <div class="card" style="width:360px;padding:28px;flex-shrink:0;position:sticky;top:5.5rem;box-shadow:0 12px 24px rgba(0,0,0,0.7);">
+        <h2 class="font-display" style="font-family:'Newsreader',serif;font-size:1.4rem;color:#F0EAD8;margin-bottom:1.25rem;">訂單摘要</h2>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1rem;">
+          <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+            <span style="color:#7A9088;">商品小計</span>
+            <span style="color:#F0EAD8;">NT$ {{ total.toLocaleString() }}</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+            <span style="color:#7A9088;">運費</span>
+            <span style="color:#F0EAD8;">{{ total >= 500 ? '免運' : 'NT$ 150' }}</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+            <span style="color:#7A9088;">優惠折扣</span>
+            <span style="color:#F0EAD8;">NT$ 0</span>
+          </div>
+        </div>
+        <div style="height:1px;background:#2A3D33;margin-bottom:1rem;"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;">
+          <span style="font-size:0.9rem;font-weight:500;color:#F0EAD8;">合計</span>
+          <span class="font-display" style="font-family:'Newsreader',serif;font-size:1.5rem;color:#C9A96E;">
+            NT$ {{ (total + (total >= 500 ? 0 : 150)).toLocaleString() }}
+          </span>
+        </div>
+        <button @click="goCheckout" class="btn-gold" style="width:100%;">前往結帳</button>
+      </div>
+    </div>
+  </template>
+
+  <!-- Confirm Dialog -->
+  <div v-if="confirmVisible" style="position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.6);" @click="confirmVisible = false"></div>
+    <div class="card" style="position:relative;width:100%;max-width:22rem;margin:0 1rem;padding:2rem;text-align:center;">
+      <h3 class="font-display" style="font-family:'Newsreader',serif;font-size:1.25rem;color:#F0EAD8;margin-bottom:0.5rem;">確認移除</h3>
+      <p style="font-size:0.875rem;color:#7A9088;margin-bottom:1.5rem;">確定要從購物車中移除這個商品嗎？</p>
+      <div style="display:flex;gap:0.75rem;justify-content:center;">
+        <button @click="confirmVisible = false" class="btn-ghost" style="padding:0.6rem 1.5rem;">取消</button>
+        <button @click="handleDelete" style="padding:0.6rem 1.5rem;background:#C0504D22;color:#C0504D;border:1px solid #C0504D44;border-radius:9999px;font-size:0.875rem;cursor:pointer;">確認移除</button>
+      </div>
+    </div>
+  </div>
+</div>

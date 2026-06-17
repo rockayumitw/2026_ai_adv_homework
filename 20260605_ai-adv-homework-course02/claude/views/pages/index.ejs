@@ -1,0 +1,123 @@
+<div id="app">
+
+  <!-- Hero -->
+  <section style="position:relative;height:680px;overflow:hidden;">
+    <img src="https://images.unsplash.com/photo-1667323567496-de170e328fee?w=1440" alt="hero"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(14,26,20,0.8) 0%, rgba(14,26,20,0.4) 50%, rgba(14,26,20,0.93) 100%);"></div>
+
+    <!-- Hero content @ x96 y120 -->
+    <div style="position:absolute;top:120px;left:96px;display:flex;flex-direction:column;gap:28px;">
+      <p style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:4px;color:#C9A96E;">✦  BOTANICAL COLLECTION  ✦</p>
+      <h1 style="font-family:'Newsreader',serif;font-size:88px;font-style:italic;font-weight:400;line-height:1.05;color:#F0EAD8;width:700px;">
+        自然之美<br>無聲勝有聲
+      </h1>
+      <p style="font-family:'Geist',sans-serif;font-size:16px;color:#7A9088;line-height:1.7;width:480px;">
+        精選來自世界各地的珍稀花卉，為您的每一個珍貴時刻<br>注入大自然最純粹的美麗與溫柔。
+      </p>
+      <div style="display:flex;align-items:center;gap:20px;">
+        <a href="#products" class="btn-gold">探索花卉</a>
+        <a href="#products" style="font-family:'Geist',sans-serif;font-size:14px;color:#7A9088;" class="hover:text-cream">了解更多 ↗</a>
+      </div>
+    </div>
+
+    <!-- Hero stats @ x96 y572 -->
+    <div style="position:absolute;top:572px;left:96px;display:flex;gap:48px;">
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <span style="font-family:'Newsreader',serif;font-size:24px;color:#C9A96E;">200+</span>
+        <span style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:2px;color:#7A9088;">精選品種</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <span style="font-family:'Newsreader',serif;font-size:24px;color:#C9A96E;">48h</span>
+        <span style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:2px;color:#7A9088;">新鮮配送</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <span style="font-family:'Newsreader',serif;font-size:24px;color:#C9A96E;">5★</span>
+        <span style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:2px;color:#7A9088;">顧客評價</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products @ padding 72/96 gap 48 -->
+  <section id="products" style="padding:72px 96px;display:flex;flex-direction:column;gap:48px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <p style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:3px;color:#C9A96E;">✦  精選花卉</p>
+        <h2 style="font-family:'Newsreader',serif;font-size:44px;font-style:italic;font-weight:400;color:#F0EAD8;">當季推薦</h2>
+      </div>
+      <span style="font-family:'Geist',sans-serif;font-size:13px;color:#7A9088;">查看全部 →</span>
+    </div>
+
+    <div v-if="loading" class="flex justify-center" style="padding:3rem 0;">
+      <div class="spinner"></div>
+    </div>
+
+    <template v-else>
+      <div v-if="products.length === 0" style="text-align:center;padding:3rem 0;color:#7A9088;">
+        目前沒有商品，請稍後再來。
+      </div>
+
+      <div v-else style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+        <div
+          v-for="product in products"
+          :key="product.id"
+          @click="goToProduct(product.id)"
+          style="border-radius:8px;overflow:hidden;cursor:pointer;box-shadow:0 12px 24px rgba(0,0,0,0.7);transition:transform 0.2s;"
+          onmouseover="this.style.transform='translateY(-4px)'"
+          onmouseout="this.style.transform=''"
+        >
+          <!-- Image -->
+          <div style="height:280px;overflow:hidden;">
+            <img
+              :src="product.image_url || 'https://images.unsplash.com/photo-1565279445322-30ab5314ff94?w=400'"
+              :alt="product.name"
+              style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;"
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform=''"
+            />
+          </div>
+          <!-- Body -->
+          <div style="background:#1A2D24;padding:16px 18px;display:flex;flex-direction:column;gap:12px;">
+            <h3 style="font-family:'Newsreader',serif;font-size:19px;font-weight:400;color:#F0EAD8;">{{ product.name }}</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <span style="font-family:'Geist',sans-serif;font-size:15px;font-weight:500;color:#C9A96E;">NT$ {{ product.price.toLocaleString() }}</span>
+              <button
+                @click.stop="addToCart(product)"
+                :disabled="product._adding || product.stock <= 0"
+                style="font-family:'Geist',sans-serif;font-size:12px;padding:6px 14px;border-radius:9999px;border:1px solid #2A3D33;color:#7A9088;background:transparent;cursor:pointer;transition:border-color 0.15s,color 0.15s;"
+                onmouseover="this.style.borderColor='#C9A96E';this.style.color='#F0EAD8'"
+                onmouseout="this.style.borderColor='#2A3D33';this.style.color='#7A9088'"
+              >
+                {{ product.stock <= 0 ? '已售完' : '+ 加入' }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div v-if="pagination.totalPages > 1" style="display:flex;justify-content:center;gap:0.5rem;">
+        <button
+          v-for="p in pagination.totalPages"
+          :key="p"
+          @click="loadProducts(p)"
+          style="width:2.25rem;height:2.25rem;border-radius:9999px;font-size:0.8rem;border:1px solid #2A3D33;cursor:pointer;transition:background 0.15s,color 0.15s;"
+          :style="{ background: p === pagination.page ? '#C9A96E' : 'transparent', color: p === pagination.page ? '#0E1A14' : '#7A9088' }"
+        >{{ p }}</button>
+      </div>
+    </template>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="background:#162318;padding:56px 96px;display:flex;justify-content:space-between;align-items:center;">
+    <div>
+      <h2 style="font-family:'Newsreader',serif;font-size:36px;font-style:italic;font-weight:400;color:#F0EAD8;margin-bottom:6px;">訂閱最新花況</h2>
+      <p style="font-family:'Geist',sans-serif;font-size:14px;color:#7A9088;">每週收到獨家優惠與當季精選</p>
+    </div>
+    <div style="display:flex;border-radius:9999px;overflow:hidden;border:1px solid #2A3D33;">
+      <input type="email" placeholder="您的電子信箱" style="background:#1A2D24;border:none;padding:12px 24px;font-size:14px;color:#F0EAD8;width:288px;outline:none;" />
+      <button style="background:#C9A96E;color:#0E1A14;padding:12px 24px;font-size:14px;font-weight:500;border:none;cursor:pointer;">訂閱</button>
+    </div>
+  </section>
+
+</div>

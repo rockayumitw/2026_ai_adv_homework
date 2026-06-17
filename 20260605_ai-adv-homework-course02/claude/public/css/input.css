@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dk:        #0E1A14;
+  --color-dk2:       #162318;
+  --color-dk3:       #1A2D24;
+  --color-cream:     #F0EAD8;
+  --color-muted:     #7A9088;
+  --color-gold:      #C9A96E;
+  --color-gold-dim:  #C9A96E33;
+  --color-border:    #2A3D33;
+  --color-success:   #6B9E6B;
+  --color-danger:    #C0504D;
+}
+
+body {
+  font-family: 'Geist', 'Noto Sans TC', sans-serif;
+  background-color: #0E1A14;
+  color: #F0EAD8;
+}
+
+.font-display {
+  font-family: 'Newsreader', 'Noto Serif TC', serif;
+}
+
+/* Spinner */
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #2A3D33;
+  border-top-color: #C9A96E;
+  border-radius: 9999px;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Gold pill button */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  background-color: #C9A96E;
+  color: #0E1A14;
+  font-family: 'Geist', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 14px 36px;
+  border-radius: 9999px;
+  transition: opacity 0.15s;
+}
+.btn-gold:hover { opacity: 0.88; }
+.btn-gold:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* Ghost pill button */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #7A9088;
+  font-family: 'Geist', sans-serif;
+  font-size: 0.875rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: 1px solid #2A3D33;
+  transition: border-color 0.15s, color 0.15s;
+}
+.btn-ghost:hover { border-color: #C9A96E; color: #F0EAD8; }
+
+/* Dark card */
+.card {
+  background-color: #1A2D24;
+  border: 1px solid #2A3D33;
+  border-radius: 0.75rem;
+}
+
+/* Form input */
+.input-dark {
+  width: 100%;
+  background-color: #162318;
+  border: 1px solid #2A3D33;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #F0EAD8;
+  transition: border-color 0.15s;
+}
+.input-dark::placeholder { color: #3A6050; }
+.input-dark:focus { outline: none; border-color: #C9A96E; }
+.input-dark.error { border-color: #C0504D; }
+
+/* Status badges */
+.badge-paid    { background:#6B9E6B22; color:#6B9E6B; }
+.badge-pending { background:#C9A96E22; color:#C9A96E; }
+.badge-failed  { background:#C0504D22; color:#C0504D; }

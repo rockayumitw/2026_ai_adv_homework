@@ -1,0 +1,89 @@
+<div id="app" data-product-id="<%= productId %>">
+
+  <div v-if="loading" style="display:flex;justify-content:center;padding:5rem 0;">
+    <div class="spinner"></div>
+  </div>
+
+  <div v-else-if="notFound" style="text-align:center;padding:6rem 0;color:#7A9088;">
+    <p style="font-family:'Newsreader',serif;font-size:3rem;margin-bottom:1rem;">✦</p>
+    <h2 style="font-family:'Newsreader',serif;font-size:1.5rem;color:#F0EAD8;margin-bottom:0.75rem;">找不到此商品</h2>
+    <a href="/" style="color:#C9A96E;font-size:0.875rem;">← 回到首頁</a>
+  </div>
+
+  <div v-else-if="product" style="display:flex;align-items:flex-start;">
+
+    <!-- Left: Image (680 / padding 48 48 48 96) -->
+    <div style="width:680px;flex-shrink:0;padding:48px 48px 48px 96px;display:flex;flex-direction:column;">
+      <div style="border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,0.7);">
+        <img
+          :src="product.image_url || 'https://images.unsplash.com/photo-1565279445322-30ab5314ff94?w=600'"
+          :alt="product.name"
+          style="width:100%;aspect-ratio:1;object-fit:cover;display:block;"
+        />
+      </div>
+      <!-- Thumbnails -->
+      <div style="display:flex;gap:12px;padding-top:16px;">
+        <div style="width:80px;height:80px;border-radius:8px;overflow:hidden;border:2px solid #C9A96E;">
+          <img :src="product.image_url || 'https://images.unsplash.com/photo-1565279445322-30ab5314ff94?w=160'" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <div style="width:80px;height:80px;border-radius:8px;overflow:hidden;border:1px solid #2A3D33;">
+          <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=160" style="width:100%;height:100%;object-fit:cover;opacity:0.7;"/>
+        </div>
+        <div style="width:80px;height:80px;border-radius:8px;overflow:hidden;border:1px solid #2A3D33;">
+          <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=160" style="width:100%;height:100%;object-fit:cover;opacity:0.7;"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Info (fill / padding 56 96 56 0 / gap 24) -->
+    <div style="flex:1;padding:56px 96px 56px 0;display:flex;flex-direction:column;gap:24px;">
+      <p style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:3px;color:#C9A96E;">✦  LIMITED EDITION</p>
+
+      <h1 style="font-family:'Newsreader',serif;font-size:56px;font-style:italic;font-weight:400;line-height:1.1;color:#F0EAD8;">
+        {{ product.name }}
+      </h1>
+
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="color:#C9A96E;font-size:14px;letter-spacing:2px;">★★★★★</span>
+        <span style="font-family:'Geist',sans-serif;font-size:13px;color:#7A9088;">4.9 (86 則評價)</span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="font-family:'Newsreader',serif;font-size:40px;font-weight:400;color:#C9A96E;">NT$ {{ product.price.toLocaleString() }}</span>
+        <span style="background:#C9A96E22;color:#C9A96E;font-family:'Geist',sans-serif;font-size:12px;padding:4px 12px;border-radius:9999px;">
+          尚有 {{ product.stock }} 件
+        </span>
+      </div>
+
+      <p style="font-family:'Geist',sans-serif;font-size:15px;color:#7A9088;line-height:1.75;width:480px;max-width:100%;">{{ product.description }}</p>
+
+      <div style="height:1px;background:#2A3D33;"></div>
+
+      <!-- Qty -->
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div style="display:flex;border:1px solid #2A3D33;border-radius:8px;overflow:hidden;">
+          <button @click="decrease" style="padding:10px 16px;background:transparent;color:#F0EAD8;border:none;cursor:pointer;font-size:1rem;">−</button>
+          <span style="padding:10px 16px;color:#F0EAD8;border-left:1px solid #2A3D33;border-right:1px solid #2A3D33;min-width:3rem;text-align:center;">{{ quantity }}</span>
+          <button @click="increase" style="padding:10px 16px;background:transparent;color:#F0EAD8;border:none;cursor:pointer;font-size:1rem;">+</button>
+        </div>
+        <span v-if="product.stock > 0" style="font-family:'Geist',sans-serif;font-size:12px;color:#6B9E6B;">庫存充足</span>
+        <span v-else style="font-family:'Geist',sans-serif;font-size:12px;color:#C0504D;">已售完</span>
+      </div>
+
+      <button
+        @click="addToCart"
+        :disabled="adding || product.stock <= 0"
+        class="btn-gold"
+        style="width:100%;padding:16px 0;font-size:15px;"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        {{ adding ? '加入中...' : product.stock <= 0 ? '已售完' : '加入購物車' }}
+      </button>
+
+      <button class="btn-ghost" style="width:100%;padding:12px 0;gap:8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        收藏
+      </button>
+    </div>
+  </div>
+</div>

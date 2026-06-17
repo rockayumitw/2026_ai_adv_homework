@@ -1,0 +1,150 @@
+<!DOCTYPE html><html><head>
+	<title>LandWebAtm</title>
+</head>
+<body>
+	<script src="https://pay-stage.ecpay.com.tw/Scripts/jquery-3.7.1.min.js" type="text/javascript"></script>
+	<script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+
+<form action="/MockMPPost/LandWebAtmReturn" method="post">		<fieldset>
+			<legend>LandWebATMClientReturn</legend>
+
+			<div class="editor-label">
+				<label for="RC">RC</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="RC" name="RC" type="text" value="0" style="">
+				<span class="field-validation-valid" data-valmsg-for="RC" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="MSG">MSG</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="MSG" name="MSG" type="text" value="交易成功" style="">
+				<span class="field-validation-valid" data-valmsg-for="MSG" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="SendSeqNo">SendSeqNo</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="SendSeqNo" name="SendSeqNo" type="text" value="5363299" style="">
+				<span class="field-validation-valid" data-valmsg-for="SendSeqNo" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="MID">MID</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="MID" name="MID" type="text" value="041970259780001" style="">
+				<span class="field-validation-valid" data-valmsg-for="MID" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="TID">TID</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="TID" name="TID" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="TID" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="FunCode">FunCode</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="FunCode" name="FunCode" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="FunCode" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="ONO">ONO</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="ONO" name="ONO" type="text" value="5363299" style="">
+				<span class="field-validation-valid" data-valmsg-for="ONO" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="AcctIdTo">AcctIdTo</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="AcctIdTo" name="AcctIdTo" type="text" value="5219515878025659" style="">
+				<span class="field-validation-valid" data-valmsg-for="AcctIdTo" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="CurAmt">CurAmt</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="CurAmt" name="CurAmt" type="text" value="1680" style="">
+				<span class="field-validation-valid" data-valmsg-for="CurAmt" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="TrnDt">TrnDt</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="TrnDt" name="TrnDt" type="text" value="20260607" style="">
+				<span class="field-validation-valid" data-valmsg-for="TrnDt" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="TrnTime">TrnTime</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="TrnTime" name="TrnTime" type="text" value="185910" style="">
+				<span class="field-validation-valid" data-valmsg-for="TrnTime" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="BankIdFrom">BankIdFrom</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="BankIdFrom" name="BankIdFrom" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="BankIdFrom" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="TxnSeqNo">TxnSeqNo</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="TxnSeqNo" name="TxnSeqNo" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="TxnSeqNo" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="PayTxnFee">PayTxnFee</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="PayTxnFee" name="PayTxnFee" type="text" value="0" style="">
+				<span class="field-validation-valid" data-valmsg-for="PayTxnFee" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="MAC">MAC</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="MAC" name="MAC" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="MAC" data-valmsg-replace="true"></span>
+			</div>
+
+			<div class="editor-label">
+				<label for="TradeID">TradeID</label>
+			</div>
+			<div class="editor-field">
+				<input class="text-box single-line" id="TradeID" name="TradeID" type="text" value="" style="">
+				<span class="field-validation-valid" data-valmsg-for="TradeID" data-valmsg-replace="true"></span>
+			</div>
+
+			<p>
+				<input type="submit" value="Save" style="">
+			</p>
+		</fieldset>
+</form>
+	<div>
+		<a href="/MockMPPost">Back to List</a>
+	</div>
+
+
+</body></html>

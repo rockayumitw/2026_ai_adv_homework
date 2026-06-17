@@ -1,0 +1,64 @@
+<div id="app" style="padding:3.5rem 6rem;">
+
+  <div v-if="loading" style="display:flex;justify-content:center;padding:5rem 0;">
+    <div class="spinner"></div>
+  </div>
+
+  <div v-else style="display:flex;gap:3rem;align-items:flex-start;">
+
+    <!-- Left: Form -->
+    <div style="flex:1;">
+      <h1 style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;font-weight:400;color:#F0EAD8;margin-bottom:0.5rem;">填寫收件資訊</h1>
+      <p style="font-family:'Geist',sans-serif;font-size:11px;letter-spacing:3px;color:#C9A96E;margin-bottom:2rem;">✦  步驟 2 / 2</p>
+
+      <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem;">
+        <div>
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;color:#7A9088;margin-bottom:0.5rem;">收件人姓名</label>
+          <input v-model="form.recipientName" type="text" placeholder="請輸入收件人姓名" class="input-dark" :class="{ error: errors.recipientName }" />
+          <p v-if="errors.recipientName" style="color:#C0504D;font-size:0.75rem;margin-top:0.25rem;">{{ errors.recipientName }}</p>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;color:#7A9088;margin-bottom:0.5rem;">電子信箱</label>
+          <input v-model="form.recipientEmail" type="email" placeholder="example@email.com" class="input-dark" :class="{ error: errors.recipientEmail }" />
+          <p v-if="errors.recipientEmail" style="color:#C0504D;font-size:0.75rem;margin-top:0.25rem;">{{ errors.recipientEmail }}</p>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;color:#7A9088;margin-bottom:0.5rem;">收件地址</label>
+          <input v-model="form.recipientAddress" type="text" placeholder="台北市⋯" class="input-dark" :class="{ error: errors.recipientAddress }" />
+          <p v-if="errors.recipientAddress" style="color:#C0504D;font-size:0.75rem;margin-top:0.25rem;">{{ errors.recipientAddress }}</p>
+        </div>
+      </div>
+
+      <button @click="submitOrder" :disabled="submitting" class="btn-gold" style="width:100%;font-size:0.95rem;">
+        {{ submitting ? '處理中...' : '確認訂單' }}
+      </button>
+    </div>
+
+    <!-- Right: Summary -->
+    <div class="card" style="width:360px;padding:28px;flex-shrink:0;position:sticky;top:5.5rem;">
+      <h2 class="font-display" style="font-family:'Newsreader',serif;font-size:1.4rem;color:#F0EAD8;margin-bottom:1.25rem;">訂單內容</h2>
+      <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1rem;">
+        <div v-for="item in cartItems" :key="item.id" style="display:flex;justify-content:space-between;font-size:0.8rem;">
+          <span style="color:#7A9088;max-width:12rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{ item.product.name }} × {{ item.quantity }}</span>
+          <span style="color:#F0EAD8;">NT$ {{ (item.product.price * item.quantity).toLocaleString() }}</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#2A3D33;margin-bottom:1rem;"></div>
+      <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:0.5rem;">
+        <span style="color:#7A9088;">商品小計</span>
+        <span style="color:#F0EAD8;">NT$ {{ cartTotal.toLocaleString() }}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:1rem;">
+        <span style="color:#7A9088;">運費</span>
+        <span style="color:#F0EAD8;">{{ cartTotal >= 500 ? '免運' : 'NT$ 150' }}</span>
+      </div>
+      <div style="height:1px;background:#2A3D33;margin-bottom:1rem;"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-size:0.9rem;font-weight:500;color:#F0EAD8;">合計</span>
+        <span class="font-display" style="font-family:'Newsreader',serif;font-size:1.5rem;color:#C9A96E;">
+          NT$ {{ (cartTotal + (cartTotal >= 500 ? 0 : 150)).toLocaleString() }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
