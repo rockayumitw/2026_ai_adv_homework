@@ -3,10 +3,9 @@ const path = require('path');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const swaggerUi = require('swagger-ui-express');
-const SwaggerParser = require('@apidevtools/swagger-parser');
 const registerRoutes = require('./routes');
 const { notFound, errorHandler } = require('./middleware/errorHandler');
-const { generateSpec } = require('./openapi/generator');
+const { buildOpenApiDocument } = require('./openapi/document');
 
 function createApp() {
   const app = express();
@@ -24,11 +23,8 @@ function createApp() {
   app.use(express.static(path.join(__dirname, '..', 'public')));
 
   // OpenAPI / Swagger UI（掛在 registerRoutes 前，避免被 notFound 攔截）
-  const spec = generateSpec();
-  // 非阻塞驗證：規格問題只記 log，不影響伺服器啟動
-  SwaggerParser.validate(spec)
-    .then(() => console.log('[openapi] 規格驗證成功'))
-    .catch((err) => console.warn('[openapi] 規格驗證警告：', err.message));
+  const spec = buildOpenApiDocument();
+  app.get('/openapi.json', (req, res) => res.json(spec));
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(spec));
 
   // 掛載所有路由

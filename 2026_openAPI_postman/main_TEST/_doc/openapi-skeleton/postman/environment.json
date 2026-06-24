@@ -1,0 +1,9 @@
+{
+  "name": "API - Local",
+  "values": [
+    { "key": "baseUrl",     "value": "http://localhost:3000", "enabled": true },
+    { "key": "email",       "value": "demo@example.com",     "enabled": true },
+    { "key": "password",    "value": "demo1234",             "enabled": true, "type": "secret" },
+    { "key": "bearerToken", "value": "",                     "enabled": true, "type": "secret" }
+  ]
+}
